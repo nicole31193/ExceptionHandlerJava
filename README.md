@@ -1,6 +1,6 @@
 # ExceptionHandlerJava
 
-This Java program demonstrates exception handling while reading numerical data from a file. It is based on the modified `DataAnalyzer.java` example from Chapter 7 of our course textbook.
+This Java program demonstrates exception handling while reading numerical data from a file.
 
 The program prompts the user to input a filename, reads the file line by line, and calculates the average of valid integers. If invalid entries are encountered (such as words or malformed numbers), the program gracefully handles the error using `try-catch` blocks and continues execution without crashing.
 
@@ -8,7 +8,7 @@ The program prompts the user to input a filename, reads the file line by line, a
 
 ## Description
 
-This program intentionally **does not use** `hasNextInt()` or `hasNextDouble()`. Instead, it uses `nextInt()` and relies on catching exceptions like `NumberFormatException` and `FileNotFoundException` to demonstrate robust input handling.
+This uses `nextInt()` and relies on catching exceptions like `NumberFormatException` and `FileNotFoundException` to demonstrate robust input handling.
 
 ### Features
 
