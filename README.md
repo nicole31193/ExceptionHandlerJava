@@ -1,30 +1,32 @@
 # ExceptionHandlerJava
 
-This Java program demonstrates exception handling while reading numerical data from a file.
+This Java program demonstrates exception handling while reading numerical data from a file. It is an example based on Chapter 7 of the course textbook.
 
-The program prompts the user to input a filename, reads the file line by line, and calculates the average of valid integers. If invalid entries are encountered (such as words or malformed numbers), the program gracefully handles the error using `try-catch` blocks and continues execution without crashing.
+The program prompts the user to input a filename, reads the file line by line using `Scanner.hasNext()`, and attempts to convert each token into an integer using `Integer.parseInt()`. If invalid entries (like words or symbols) are encountered, they are gracefully skipped using exception handling.
 
 ---
 
 ## Description
 
-This uses `nextInt()` and relies on catching exceptions like `NumberFormatException` and `FileNotFoundException` to demonstrate robust input handling.
+The program focuses on robust file input by using nested `try-catch` blocks. It avoids `hasNextInt()` or `hasNextDouble()` in favor of directly parsing strings and catching `NumberFormatException`. This demonstrates clean separation of logic and error handling in Java.
 
 ### Features
 
-- Prompts user for a filename.
-- Reads numerical values from the specified file.
-- Skips over any invalid input without stopping execution.
-- Outputs the average of valid integers.
-- Handles missing file errors cleanly.
+- Prompts the user for a filename.
+- Reads and parses values from the file one token at a time.
+- Skips invalid values using exception handling.
+- Displays the average of valid integers.
+- Gracefully handles file-not-found errors.
 
 ---
 
 ## Example Input Files
 
-Place these `.txt` files in the same directory as your Java program when testing.
+Make sure to place these `.txt` files in the same folder as your Java program or properly configure the path.
 
 ### `input1.txt`
+
+
 
 4
 1
